@@ -1,20 +1,14 @@
-"""
-Author: Vincent
-Github: https://github.com/vincnttt
-Created on: 2022.12.15
-"""
-
-# # BASE COCO FILE DIRECTORY
+# # CREATE CUSTOM FASTER-RCNN FILE
 # %%writefile configs/faster_rcnn/custom_faster_rcnn_r50_fpn.py
 
 
-# # TRAINING COMMAND LINE
+# # TRAINING n TESTING CLI EXAMPLE
 # # training is just one line.
 # !python tools/train.py configs/faster_rcnn/custom_faster_rcnn_r50_fpn.py
-
 # # You can also test the model like this.
 # !python tools/test.py configs/faster_rcnn/custom_faster_rcnn_r50_fpn.py YOUR_MODEL_PATH --eval bbox
-
+# # cent's Ubuntu
+# python /home/cent/PycharmProjects/final_project/mmdetection/tools/train.py /home/cent/PycharmProjects/final_project/mmdetection/configs/faster_rcnn/custom_faster_rcnn_r50_fpn.py
 
 # # IGNORE THIS FOR NOW
 # the new config inherits the base configs to highlight the necessary modification
